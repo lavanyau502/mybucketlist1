@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.bucket-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bucket-list li {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.bucket-list li:last-child {
+    border-bottom: none;
+}
+
+.bucket-list li i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1em;
+    color: #333;
+}
+
+.bucket-list li i.fas.fa-check-circle {
+    color: #2ecc71;
+}
+
+.bucket-list li:hover {
+    background-color: #eee;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Bucket List</h1>
+    </header>
+    <main>
+        <ul class="bucket-list">
+            <li>
+                <span>Travel to Paris</span>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            <li>
+                <span>Learn to play the guitar</span>
+                <i class="fas fa-star"></i>
+            </li>
+            <li>
+                <span>Go skydiving</span>
+                <i class="fas fa-star"></i>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Bucket List</p>
+    </footer>
+</body>
+</html>
